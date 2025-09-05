@@ -34,7 +34,7 @@ La base de datos se construirá en base a los datos que recolectaremos sobre las
 8. Nombre del personaje.
 
 Ejemplo inicial: 
-![Alt text](/images/Tabla%20de%20datos.jpg)
+![Alt text](/images/Tabla-de-datos.jpg)
 
 La base de datos que construiremos nos permitirá identificar y comparar patrones en la representación del llanto dentro del cine de Studio Ghibli. Al sistematizar las variables, se podrá analizar cómo, cuándo y por qué lloran los personajes, y si existen tendencias relacionadas con género, edad, rol narrativo o momento de la trama. Lo que nos permitirá analizar un aspecto emocional y significativo dentro de las películas, como lo son las “lágrimas Ghibli”.
 
