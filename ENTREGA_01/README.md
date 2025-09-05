@@ -48,6 +48,8 @@ Este proyecto busca seguir personaje a personaje las historias más prominentes 
 Dado el estilo visual de las películas Ghibli, es inevitable que las imágenes y referencias de la webstory tengan base en los personajes característicos de cada filme en específico. Los Susuwatari on un elemento emblemático que facilmente se puede retratar.
 
 En cuanto a referencias, ["Film Flowers"](https://sxywu.github.io/filmflowers/), webstory brevemente vista en clases (en la cual indagamos posteriormente), resuena con el uso de colores que buscamos y la capacidad de representar visualmente una historia, a través de colores, formas y detalles que permitan elaborar un relato cohesivo. 
+![Alt text](/images/film-flowers-explanation.png)
+En la imagen anterior se puede ver el glosario que explica la forma de cada flor en específico, cada una representando una película a través de formas y colores. 
 
 ##### REFERENCIAS: 
 ######  Wu, Shirley. “Film Flowers.” Film Flowers, sxywu.github.io/filmflowers/. Ingresado 4 sept. 2025.
