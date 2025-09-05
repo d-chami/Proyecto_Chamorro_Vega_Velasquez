@@ -1,11 +1,11 @@
 
   ## Presentación de propuesta 
-
+![Alt text](/images/fan-art-ghibli-18.jpg)
   ### Síntesis del proyecto:
 El proyecto consiste en un análisis de las películas producidas por el estudio de animación **Studio Ghibli**, particularmente enfocado en los filmes dirigidos por Hayao Miyazaki, pionero y fundador del estudio. 
 
 Desde 1986 hasta el 2023 existen 10 películas que Hayao Miyazaki ha dirigido, teniendo como punto en común los mundos fantásticos que el director crea, la presencia de muchas protagonistas complicadas y empoderadas, y la exploración de la condición humana, ya sea a través de la soledad, la frustración, la ira, el luto, la tristeza o la felicidad. La mayoría de estas emociones son retratadas en la pantalla a través de lágrimas, las cuales en el estilo artístico del estudio son exageradas como gotas enormes y reventadas, que usualmente llevan a un llanto desenfrenado. Desde este elemento estilístico es que nace nuestra investigación. 
-
+![Alt text](/images/tears.jpg)
 
 
 La mayoría de las películas de Miyazaki tienen un rating PG o PG-13 y están enfocadas a un público de menor edad, por lo cual ***cada película es capaz de comunicar emociones mixtas de manera simple utilizando las lágrimas sin reducir su complejidad***. De esta manera, los sentimientos detrás de las lágrimas se pueden leer con claridad. 
