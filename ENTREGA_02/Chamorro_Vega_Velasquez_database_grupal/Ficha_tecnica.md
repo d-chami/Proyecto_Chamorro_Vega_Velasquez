@@ -33,6 +33,9 @@ Los llantos fueron documentados a mano, mediante la visualización de cada una d
 
 Los datos son cualitativos (razones de llanto, nombres de personajes) tanto como cuantitativos (año de publicación de la película, segundos de llanto)
 
+**CADA PELÍCULA REPRESENTA UNA BASE DE DATOS** 
+
+
 #### **DESCRIPCIÓN DE LAS VARIABLES DE LA BASE LIMPIA**
 
 - PELICULA: Título de la película que se analiza 
@@ -46,7 +49,7 @@ Los datos son cualitativos (razones de llanto, nombres de personajes) tanto como
 - EDAD: Edad en ramos etáreos (Bebé, Infante, Joven, Adulto, Mayor)
 - PROTAGONISMO: Protagonista, Secondario o Incidental 
 - NARRATIVA: Inicio, desarrollo, clímax y desenlace
-- CAUSA: 
-- EMOCIÓN 
-- REACCIÓN SOCIAL 
-- RESPONSABILIDAD ATRIBUÍDA 
+- CAUSA: Descritas bajo los criterios que se encuentran en el estudio presentado en la e01
+- EMOCIÓN: ""
+- REACCIÓN SOCIAL: ""
+- RESPONSABILIDAD ATRIBUÍDA: ""
