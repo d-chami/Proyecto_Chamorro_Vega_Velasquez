@@ -22,3 +22,4 @@ Tal como en la vida real, las emociones de los personajes son más complejas dep
 Es posible detectar una tendencia al alza del llanto en las películas de Miyazaki. En la base de datos bruta que hicimos en conjunto, se puede ver en cada una de las hojas que la cantidad de llanto aumenta. 
 
 ### La historia actual
+Actualmente, podemos ver un par de cosas. La primera es que Miyazaki lentamente le ha ido perdiendo el susto a las lágrimas, utilizándolas con más frecuencia a medida que avanza su filmografía. Segundo, la mayoría de los personajes que lloran son mujeres. Tercero, las mujeres que lloran usualmente son protagonistas. Dadas estas condiciones, podemos armar una historia en relación al género, las emociones, y la evolución de Miyazaki como director para abordar estas temáticas, sin ridiculizar a sus protagonistas, pero en vez desafiando las normas de la sociedad japonesa. 
