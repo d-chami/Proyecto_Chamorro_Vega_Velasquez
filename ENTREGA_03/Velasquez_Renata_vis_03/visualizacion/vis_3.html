@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300}}, "data": {"name": "data-eb2ba205eba8b473ebd544f4732e466b"}, "mark": {"type": "bar"}, "encoding": {"color": {"field": "Tipo", "title": "Tipo de protagonismo", "type": "nominal"}, "tooltip": [{"field": "Personaje", "type": "nominal"}, {"field": "Tipo", "type": "nominal"}, {"field": "Cantidad", "type": "quantitative"}], "x": {"field": "Personaje", "title": "Personaje", "type": "nominal"}, "y": {"field": "Cantidad", "title": "Segundos totales", "type": "quantitative"}}, "height": 400, "title": "Segundos de llanto por personaje y tipo de protagonismo", "width": 600, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-eb2ba205eba8b473ebd544f4732e466b": [{"Personaje": "Beb\u00c3\u0083\u00c2\u00a9", "Tipo": "Incidental", "Cantidad": 7.0}, {"Personaje": "Bo", "Tipo": "Secundario", "Cantidad": 30.0}, {"Personaje": "Chihiro", "Tipo": "Protagonista", "Cantidad": 128.0}, {"Personaje": "Fio", "Tipo": "Secundario", "Cantidad": 13.0}, {"Personaje": "Himi", "Tipo": "Protagonista", "Cantidad": 9.0}, {"Personaje": "Hombre", "Tipo": "Incidental", "Cantidad": 23.0}, {"Personaje": "Howl", "Tipo": "Protagonista", "Cantidad": 34.0}, {"Personaje": "Jiro", "Tipo": "Protagonista", "Cantidad": 12.0}, {"Personaje": "Junior", "Tipo": "Incidental", "Cantidad": 29.0}, {"Personaje": "Kaya", "Tipo": "Incidental", "Cantidad": 11.0}, {"Personaje": "Kayo", "Tipo": "Secundario", "Cantidad": 10.0}, {"Personaje": "Kiki", "Tipo": "Protagonista", "Cantidad": 63.0}, {"Personaje": "Kiriko", "Tipo": "Secundario", "Cantidad": 3.0}, {"Personaje": "Kumiko", "Tipo": "Incidental", "Cantidad": 12.0}, {"Personaje": "Kurokawa", "Tipo": "Secundario", "Cantidad": 2.0}, {"Personaje": "Mahito", "Tipo": "Protagonista", "Cantidad": 39.0}, {"Personaje": "Mei", "Tipo": "Protagonista", "Cantidad": 53.0}, {"Personaje": "Nahoko Satomi", "Tipo": "Protagonista", "Cantidad": 8.0}, {"Personaje": "Natsuko", "Tipo": "Secundario", "Cantidad": 3.0}, {"Personaje": "Osono", "Tipo": "Secundario", "Cantidad": 4.0}, {"Personaje": "Padre de Nahoko", "Tipo": "Secundario", "Cantidad": 6.0}, {"Personaje": "Periquitos", "Tipo": "Secundario", "Cantidad": 3.0}, {"Personaje": "Satsuki", "Tipo": "Protagonista", "Cantidad": 39.0}, {"Personaje": "Sheeta", "Tipo": "Protagonista", "Cantidad": 2.0}, {"Personaje": "Sophie", "Tipo": "Protagonista", "Cantidad": 88.0}, {"Personaje": "Sosuke", "Tipo": "Protagonista", "Cantidad": 60.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
