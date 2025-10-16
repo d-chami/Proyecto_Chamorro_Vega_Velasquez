@@ -19,4 +19,6 @@ Nuestra base de datos se compone de las variables:
 - Responsabilidad atribuida.
 
 Nota: Cuando pasamos la base de datos a formato csv algunos datos quedaron raros debido a que tenian caracteres especiales (ej: año, niño y psicológico), no se si exista una forma de arreglarlo sin cambiar la ortografía de la palabra.
+[base de datos - lágrimas Ghibli](https://drive.google.com/file/d/1G6XCaVN_G6qhacoo19Jj10PPrrjnuYpz/view?usp=drivesdk)
+
 
