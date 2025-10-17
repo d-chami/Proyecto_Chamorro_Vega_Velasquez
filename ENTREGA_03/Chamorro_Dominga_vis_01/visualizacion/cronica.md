@@ -8,4 +8,7 @@ Adicionalmente, en la versión JPG utilice la aplicación Procreate para convert
 
 Si bien no fue realizado en este gráfico particular, sería interesante separar estas barras por el nivel de protagonismo de los personajes que lloran en relación a su género y épocas. Por ejemplo, en El viento se levanta (2013), el llanto másculino va por sobre el promedio, y según nuestra base de datos original, la mayoría de este llanto es por el protagonista, el cual es una ficcionalización explícita de Hayao Miyazaki y sus desafíos creativos y pasiones. Vale la pena preguntarse, ¿Qué significa que Miyazaki retrate a su “yo” en pantalla cómo un hombre que llora? ¿Cómo esto se compara con su primera película, El castillo en el cielo (1986), donde las mujeres exclusivamente lloran? ¿Será que Miyazaki ha evolucionado en su empatía por la vulnerabilidad masculina? Estas dudas no se pudieron visualizar por falta de conocimiento por parte de esta humilde autora. 
 
+¡Me quede con más ganas de expandir este gráfico! ¿Cómo es que hitos importantes en la historia mundial afectan las impresiones de Miyazaki? Sabemos que él no recibio el Oscar perteneciente a El viaje de Chihiro en protesta a la guerra en Iraq. ¿Cómo es que esto puede reflejar su relación con las emociones? Al mismo tiempo, sería interesante ver como la linea de tiempo de las películas calsa con su edad. ¿Quién era Miyazaki en 1986? ¿En el 2001? ¿En el 2023? ¿Como su edad afecta su creación artística? Estas dudas las tendre pendientes para la próxima entrega. 
+
+
 
