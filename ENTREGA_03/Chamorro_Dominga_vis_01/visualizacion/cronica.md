@@ -4,7 +4,8 @@ En la visualización que cree, me interesaba analizar dos variables: el género 
 
 Las conclusiones que podemos sacar a base del gráfico es que, a medida que pasa el tiempo, la presencia del llanto masculino se vuelve más visible. Si bien el promedio de estos datos a lo largo de los 37 años indican que las mujeres lloran dos tercios más que los hombres, esto es considerando sus trabajos iniciales, en los cuales las mujeres exclusivamente lloraban. Este cambio puede reflejar un cambio en las actitudes de Miyazaki en torno al género y la vulnerabilidad que pueden mostrar los hombres. 
 
-Adicionalmente, en la versión JPG utilice la aplicación Procreate para convertir las barras representando el llanto masculino en lágrimas caídas, coincidiendo así con la estética pertinente a nuestro proyecto. 
+Adicionalmente, en la versión JPG utilice la aplicación Procreate para convertir las barras representando el llanto masculino en lágrimas caídas, coincidiendo así con la estética pertinente a nuestro proyecto. Lamentablemente, no sabía como lograr este efecto en HTML. 
 
 Si bien no fue realizado en este gráfico particular, sería interesante separar estas barras por el nivel de protagonismo de los personajes que lloran en relación a su género y épocas. Por ejemplo, en El viento se levanta (2013), el llanto másculino va por sobre el promedio, y según nuestra base de datos original, la mayoría de este llanto es por el protagonista, el cual es una ficcionalización explícita de Hayao Miyazaki y sus desafíos creativos y pasiones. Vale la pena preguntarse, ¿Qué significa que Miyazaki retrate a su “yo” en pantalla cómo un hombre que llora? ¿Cómo esto se compara con su primera película, El castillo en el cielo (1986), donde las mujeres exclusivamente lloran? ¿Será que Miyazaki ha evolucionado en su empatía por la vulnerabilidad masculina? Estas dudas no se pudieron visualizar por falta de conocimiento por parte de esta humilde autora. 
+
 
