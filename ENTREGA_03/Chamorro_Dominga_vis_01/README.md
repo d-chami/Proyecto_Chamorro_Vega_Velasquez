@@ -1,3 +1,15 @@
+# DOCUMENTACIÓN GENERAL 
+En un inicio, pense en hacer un gráfico de burbuja para encajar con la temática, pero, al darme cuenta que no sabía que variables utilizar para representarlo, me decidí en vez por el confiable gráfico de barra. Me gusta el formato por el giro visual que le pude dar, lo que me tiene muy contenta. La idea de las lagrimas se me ocurrio al ver el gráfico terminado, cuyas líneas variantes parecían cascadas. 
+
+Nuestra base de datos realmente no ha cambiado desde la entrega pasada, donde explicamos la mayoría de nuestro proceso. 
+
+Pregunta clave: ¿Será que Miyazaki ha evolucionado en su empatía por la vulnerabilidad masculina, a base de la tendencia positiva del llanto masculino?
+
+
+
+
+
+
 ⠀⠀⠀⠠⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⠀⠀⠀⠁⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
 ⠀⠀⢸⠀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
