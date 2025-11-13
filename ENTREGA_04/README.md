@@ -5,6 +5,9 @@
 
 # Documentación
 ## Manual de identidad
-Para crear nuestra identidad propia nos basamos en el estilo característico del Studio Ghibli, así que buscamos inspiración en imágenes y estractos de las películas del estudio. También
+Para crear nuestra identidad propia nos basamos en el estilo característico del Studio Ghibli, así que buscamos inspiración en imágenes y videos de las películas del estudio, también revisamos el diseño de personajes icónicos como Totoro y Sin Cara. 
+
+Analizamos los sentimientos y emociones que nos evocaban las imagenes. En las animaciones de Ghibli se transmiten las maravillas de la infancia, con un estilo visual tranquilo e inocente que es fácil de comprender
+
 
 
