@@ -23,7 +23,7 @@ La estructura del sitio está diseñada para guiar al usuario a través de un re
 2. Llanto total por película: El siguiente bloque entrega el primer dato cuantitativo, mostrando la cantidad de llanto en cada película. Esto permite contextualizar y objetivar el fenómeno antes de entrar a la interpretación. Se mostrarán lagrimas cayendo con escenas donde se llora.
 3. Análisis de las temáticas dentro de las películas: Aquí se introducen temas recurrentes que producen que los personajes lloren (pérdida, crecimiento, nostalgia, etc).
 4. Gráfico por protagonismo: Análisis de personajes al descomponer el llanto según quién llora, lo que ayuda a entender desde qué punto de vista se construye la emoción.
-5. Proporción por género:Introduce una perspectiva comparativa entre personajes femeninos y masculinos. Se ubica después del gráfico de protagonismo, porque profundiza en una variable dentro del mismo eje de análisis, la identidad).
+5. Proporción por género: Introduce una perspectiva comparativa entre personajes femeninos y masculinos. Se ubica después del gráfico de protagonismo, porque profundiza en una variable dentro del mismo eje de análisis, la identidad).
 6. Segundos de llanto a lo largo de los años: Esta parte aporta una línea temporal que vincula las emociones con la trayectoria del estudio y de Miyazaki como cread* -
 7. Conclusión: Se exponen datos sobre el Studio Ghibli y de la carrera de Miyazaki. Se reflexiona sobre la complejidad emocional de las peliculas de este estudio y las temáticas recurrentes en sus obras.
 
