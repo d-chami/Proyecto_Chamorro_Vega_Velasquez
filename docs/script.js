@@ -1,44 +1,38 @@
-// When the page loads…
-document.addEventListener("DOMContentLoaded", () => {
-    const introScreen = document.getElementById("intro-screen");
-    const mainPage = document.getElementById("main-page");
+// ⬇️ Runs when user clicks the logo
+document.getElementById("start-logo").addEventListener("click", () => {
 
-    // CLICK LOGO SCREEN TO ENTER
-    introScreen.addEventListener("click", () => {
+    // Hide the start screen
+    document.getElementById("start-screen").style.display = "none";
 
-        // hide intro logo
-        introScreen.classList.add("hidden");
+    // Show your real page
+    document.getElementById("main-content").classList.remove("hidden");
 
-        // show main site
-        mainPage.classList.remove("hidden");
-
-        // start animation
-        startTearAnimation();
-    });
+    // Start the tears
+    startTears();
 });
 
 
-// ========== TEAR CREATION ==========
-function startTearAnimation() {
-
+// -------------------------------------------
+// Ghibli tear animation function
+// -------------------------------------------
+function startTears() {
     setInterval(() => {
-        const tear = document.createElement("div");
-        tear.classList.add("tear");
+        createTear();
+    }, 600);
+}
 
-        // random position
-        tear.style.left = Math.random() * 100 + "vw";
+function createTear() {
+    const tear = document.createElement("div");
+    tear.classList.add("tear");
 
-        // random size
-        const size = 8 + Math.random() * 12;
-        tear.style.width = size + "px";
-        tear.style.height = size * 1.3 + "px";
+    // random start
+    tear.style.left = Math.random() * 100 + "vw";
+    tear.style.animationDuration = (3 + Math.random() * 2) + "s";
 
-        // random speed
-        tear.style.animationDuration = (3 + Math.random() * 2) + "s";
+    document.body.appendChild(tear);
 
-        document.body.appendChild(tear);
-
-        setTimeout(() => tear.remove(), 6000);
-
-    }, 300);
+    // remove after falling
+    setTimeout(() => {
+        tear.remove();
+    }, 5000);
 }
