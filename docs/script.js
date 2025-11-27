@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Show main content
     main.classList.remove("hidden");
     // Start tear animation
+    main.classList.add("fade-in");
     startTearAnimation();
   });
 });
