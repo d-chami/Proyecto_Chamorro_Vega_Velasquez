@@ -1,38 +1,31 @@
-// ⬇️ Runs when user clicks the logo
-document.getElementById("start-logo").addEventListener("click", () => {
+// Wait until DOM is loaded
+document.addEventListener("DOMContentLoaded", () => {
+  const intro = document.getElementById("intro-screen");
+  const logo = document.getElementById("start-logo");
+  const main = document.getElementById("main-content");
 
-    // Hide the start screen
-    document.getElementById("start-screen").style.display = "none";
+  if (!intro || !logo || !main) {
+    console.error("Required element not found! intro:", intro, "logo:", logo, "main:", main);
+    return;
+  }
 
-    // Show your real page
-    document.getElementById("main-content").classList.remove("hidden");
-
-    // Start the tears
-    startTears();
+  logo.addEventListener("click", () => {
+    // Hide intro screen
+    intro.style.display = "none";
+    // Show main content
+    main.classList.remove("hidden");
+    // Start tear animation
+    startTearAnimation();
+  });
 });
 
-
-// -------------------------------------------
-// Ghibli tear animation function
-// -------------------------------------------
-function startTears() {
-    setInterval(() => {
-        createTear();
-    }, 600);
-}
-
-function createTear() {
+function startTearAnimation() {
+  setInterval(() => {
     const tear = document.createElement("div");
     tear.classList.add("tear");
-
-    // random start
     tear.style.left = Math.random() * 100 + "vw";
     tear.style.animationDuration = (3 + Math.random() * 2) + "s";
-
     document.body.appendChild(tear);
-
-    // remove after falling
-    setTimeout(() => {
-        tear.remove();
-    }, 5000);
+    setTimeout(() => tear.remove(), 5000);
+  }, 500);
 }
