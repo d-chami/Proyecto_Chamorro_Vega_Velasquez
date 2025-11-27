@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Noto serif JP; 
   background: #eef6ff;
   overflow-x: hidden;
 }
@@ -78,3 +78,4 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
