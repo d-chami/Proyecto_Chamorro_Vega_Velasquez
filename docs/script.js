@@ -1,37 +1,39 @@
-// -----------------------------------------
-// GHIBLI TEAR MOTIF SCRIPT
-// -----------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const startBtn = document.getElementById("start-btn");
+    const startScreen = document.getElementById("start-screen");
+    const mainPage = document.getElementById("main-page");
 
-function createTear() {
-    const tear = document.createElement("div");
-    tear.classList.add("tear");
+    startBtn.addEventListener("click", () => {
+        // hide start button screen
+        startScreen.classList.add("hidden");
 
-    // Random horizontal position
-    tear.style.left = Math.random() * window.innerWidth + "px";
+        // show your original page
+        mainPage.classList.remove("hidden");
 
-    // Random fall duration (4–7 seconds)
-    const duration = 4 + Math.random() * 3;
-    tear.style.animationDuration = duration + "s";
-
-    // Random size (scales the droplet)
-    const scale = 0.8 + Math.random() * 0.6;
-    tear.style.transform = `scale(${scale})`;
-
-    // Add tear to page
-    document.body.appendChild(tear);
-
-    // Remove after animation ends
-    setTimeout(() => {
-        tear.remove();
-    }, duration * 1000);
-}
-
-// Create a new tear every 800ms (soft rainfall)
-setInterval(createTear, 800);
-
-// Bonus emotional effect: clicking creates extra tears
-document.addEventListener("click", () => {
-    for (let i = 0; i < 5; i++) {
-        setTimeout(createTear, i * 150);
-    }
+        // start tears!
+        startTearAnimation();
+    });
 });
+
+function startTearAnimation() {
+    setInterval(() => {
+        const tear = document.createElement("div");
+        tear.classList.add("tear");
+
+        // random starting x
+        tear.style.left = Math.random() * 100 + "vw";
+
+        // random size
+        const size = 8 + Math.random() * 12;
+        tear.style.width = size + "px";
+        tear.style.height = size * 1.3 + "px";
+
+        // random falling duration
+        tear.style.animationDuration = (3 + Math.random() * 2) + "s";
+
+        document.body.appendChild(tear);
+
+        // cleanup
+        setTimeout(() => tear.remove(), 5000);
+    }, 300);
+}
