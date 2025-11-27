@@ -1,3 +1,9 @@
+.container {
+  max-width: 900px;      /* ancho legible */
+  margin: 0 auto;        /* CENTRA horizontalmente */
+  text-align: center;    /* centra el texto */
+  padding: 20px;
+}
 body {
   margin: 0;
   padding: 0;
@@ -82,6 +88,7 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 
 
