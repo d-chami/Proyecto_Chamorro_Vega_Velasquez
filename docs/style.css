@@ -16,6 +16,8 @@ body {
 }
 h1, h2 {
   color: #556B2F;   /* verde musgo cute */
+h3
+  color: #c89bd1
 }
 /* Hide by default */
 .hidden {
@@ -90,6 +92,7 @@ h1, h2 {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 
 
