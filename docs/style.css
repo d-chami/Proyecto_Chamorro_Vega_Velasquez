@@ -13,6 +13,8 @@ body {
   line-height: 1.6;
   background: #eef6ff;
   overflow-x: hidden;
+  h1, h2 {
+  color: #556B2F;   /* verde musgo cute */
 }
 
 /* Hide by default */
@@ -88,6 +90,7 @@ body {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 
 
