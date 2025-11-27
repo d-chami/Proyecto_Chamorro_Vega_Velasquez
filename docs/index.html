@@ -9,23 +9,35 @@
 
 <body>
 
-    <header class="hero">
-        <h1>Ghibli Tear Motif</h1>
-        <p>Soft, emotional, floating Studio Ghibli–inspired tears</p>
-    </header>
+    <!-- ⬇️ START SCREEN ADDED -->
+    <div id="start-screen">
+        <h1 class="title">Welcome to My Ghibli Page</h1>
+        <button id="start-btn">Start</button>
+    </div>
 
-    <main>
-        <section class="card">
-            <h2>Floating Tear Effect</h2>
-            <p>This page includes a gentle animation of falling Ghibli-style tears created with JavaScript.</p>
-        </section>
-    </main>
+    <!-- ⬇️ YOUR ORIGINAL PAGE — NOW HIDDEN UNTIL BUTTON CLICK -->
+    <div id="main-page" class="hidden">
 
-    <footer>
-        <p>Made with 🌿 Studio Ghibli inspiration</p>
-    </footer>
+        <header class="hero">
+            <h1>Ghibli Tear Motif</h1>
+            <p>Soft, emotional, floating Studio Ghibli–inspired tears</p>
+        </header>
 
-    <!-- Connect the tear effect script -->
+        <main>
+            <section class="card">
+                <h2>Floating Tear Effect</h2>
+                <p>This page includes a gentle animation of falling Ghibli-style tears created with JavaScript.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p>Made with 🌿 Studio Ghibli inspiration</p>
+        </footer>
+
+    </div>
+    <!-- ⬆️ END main-page -->
+
+    <!-- JS -->
     <script src="script.js"></script>
 
 </body>
