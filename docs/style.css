@@ -1,85 +1,56 @@
-/* ---------------------------------
-   GLOBAL GHIBLI AESTHETIC
------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600&family=Inter:wght@300;400&display=swap');
-
-:root {
-    --bg-light: #f7f3e9;
-    --bg-accent: #e8efe6;
-    --text-dark: #4a4a39;
-}
-
+/* GENERAL PAGE STYLING */
 body {
     margin: 0;
-    padding: 0;
-    background: linear-gradient(180deg, var(--bg-light), var(--bg-accent));
-    color: var(--text-dark);
-    font-family: 'Inter', sans-serif;
-    overflow: hidden; /* Needed so tears fall off-screen smoothly */
-}
-
-/* Soft serif headings */
-h1, h2 {
-    font-family: 'Crimson Text', serif;
-}
-
-/* Header */
-.hero {
+    font-family: "Georgia", serif;
+    background: #dce7f5;
     text-align: center;
-    padding: 4rem 2rem;
-    background: linear-gradient(
-        160deg,
-        rgba(167, 197, 235, 0.4),
-        rgba(151, 180, 151, 0.25)
-    );
 }
 
-/* Card styling */
-.card {
-    background: #ffffffc9;
-    padding: 1.7rem 2rem;
-    margin: 2rem auto;
-    width: min(700px, 90%);
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-}
-
-/* Footer */
-footer {
+/* START SCREEN */
+#start-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #dce7f5;
     text-align: center;
-    padding: 2rem;
-    opacity: 0.7;
 }
 
+#start-btn {
+    padding: 15px 40px;
+    font-size: 20px;
+    background-color: #8fb8ed;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
-/* ---------------------------------
-   GHIBLI TEAR EFFECT CSS
------------------------------------*/
+#start-btn:hover {
+    background-color: #6ea4e8;
+}
+
+/* Hide content until activated */
+.hidden {
+    display: none;
+}
+
+/* TEAR MOTIF */
 .tear {
     position: fixed;
-    top: -50px;
-    width: 14px;
-    height: 22px;
-    background: radial-gradient(circle at 30% 30%, #ffffffcc, #8ec5ff88 70%);
-    border-radius: 50% 50% 60% 60%;
-    box-shadow: 0 0 8px #a8d7ff99;
-    opacity: 0.85;
-    pointer-events: none;
+    top: -20px;
+    width: 12px;
+    height: 16px;
+    background: rgba(173, 216, 230, 0.8);
+    border-radius: 50%;
     animation: fall linear forwards;
-    filter: blur(0.2px);
+    pointer-events: none;
 }
 
-/* Tear falling motion */
 @keyframes fall {
-    0% {
-        transform: translateY(0) scale(1);
-        opacity: 0.95;
-    }
-    90% {
-        opacity: 0.9;
-    }
-    100% {
-        transform: translateY(120vh) scale(0.9);
+    to {
+        transform: translateY(110vh);
         opacity: 0;
     }
 }
