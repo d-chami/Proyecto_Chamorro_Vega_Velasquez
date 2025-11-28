@@ -11,7 +11,7 @@ body {
   font-family: "Noto Serif JP", serif;
   text-align: center;
   line-height: 1.6;
-  background: #eef6ff;
+  background: #01aef0;
   overflow-x: hidden;
   /* OJO: QUITÉ "padding: 20 px;" porque estaba MAL ESCRITO */
 }
@@ -99,3 +99,4 @@ h3 {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
