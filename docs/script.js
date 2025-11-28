@@ -29,4 +29,5 @@ function startTearAnimation() {
     document.body.appendChild(tear);
     setTimeout(() => tear.remove(), 5000);
   }, 500);
+  startTearAnimation();
 }
