@@ -1,26 +1,30 @@
 .container {
-  max-width: 900px;      /* ancho legible */
-  margin: 0 auto;        /* CENTRA horizontalmente */
-  text-align: center;    /* centra el texto */
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
   padding: 20px;
 }
+
 body {
   margin: 0;
   padding: 0;
-  font-family: "Noto serif JP", serif ; 
+  font-family: "Noto Serif JP", serif;
   text-align: center;
-  padding: 20 px;
   line-height: 1.6;
   background: #eef6ff;
   overflow-x: hidden;
+  /* OJO: QUITÉ "padding: 20 px;" porque estaba MAL ESCRITO */
 }
 
+/* Títulos */
 h1, h2 {
-  color: #556B2F;   /* verde musgo cute */
+  color: #556B2F; /* verde musgo */
 }
+
 h3 {
   color: #c89bd1;
 }
+
 /* Hide by default */
 .hidden {
   display: none;
@@ -52,7 +56,7 @@ h3 {
   opacity: 0.7;
 }
 
-/* Main page styling — optional tweak */
+/* Main page styling */
 .hero {
   text-align: center;
   padding: 40px;
@@ -76,6 +80,7 @@ h3 {
   border-radius: 50% 50% 70% 70%;
   pointer-events: none;
   animation: fall linear forwards;
+  z-index: 9999;
 }
 
 @keyframes fall {
@@ -87,23 +92,10 @@ h3 {
 
 /* Fade-in animation */
 .fade-in {
-    animation: fadeIn 1s ease forwards;
+  animation: fadeIn 1s ease forwards;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
