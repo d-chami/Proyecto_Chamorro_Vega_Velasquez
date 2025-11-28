@@ -41,7 +41,7 @@ h3 {
 }
 
 #start-logo {
-  width: 200px;
+  width: 350px;
   cursor: pointer;
 }
 
@@ -93,6 +93,7 @@ h3 {
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
 
 
 
