@@ -100,4 +100,45 @@ h3 {
   to { opacity: 1; }
 }
 
+/* Layout setup */
+.layout {
+    display: flex;
+    align-items: flex-start; /* required so sticky works */
+}
+
+/* LEFT SIDE — sticky */
+.sidebar {
+    width: 280px;
+    padding: 24px;
+    position: sticky;
+    top: 0;
+    height: 100vh;           /* full height */
+    background: #eef6ff;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;        /* if sidebar gets long */
+}
+
+/* RIGHT SIDE — scrolls */
+.content {
+    flex: 1;
+    padding: 32px;
+    background: #f7f9fc;
+}
+
+/* ⭐️ IMAGE GRID ⭐️ */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* ⭐️ ALL IMAGES SAME SIZE ⭐️ */
+.image-grid img {
+    width: 100%;
+    height: 200px;          /* fixed height */
+    object-fit: cover;      /* auto-crops beautifully */
+    border-radius: 12px;
+}
+
 
