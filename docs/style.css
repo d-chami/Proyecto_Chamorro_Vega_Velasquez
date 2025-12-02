@@ -18,11 +18,12 @@ body {
 
 /* Títulos */
 h1, h2 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins Light", sans-serif;
   color: #556B2F; /* verde musgo */
 }
 
 h3 {
+ font-family: "Poppins Light", sans-serif;
   color: #c89bd1;
 }
 
