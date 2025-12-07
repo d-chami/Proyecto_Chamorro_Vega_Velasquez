@@ -182,8 +182,10 @@ h3 {
   text-align: left;
 }
 body {
-  cursor: url("docs/totoro_click.png") 10 10, auto;
+  cursor: url("docs/totoro_click.png"), auto;
 }
+
+
 
 
 
