@@ -181,6 +181,11 @@ h3 {
   line-height: 1.6;
   text-align: left;
 }
+body {
+  cursor: url("docs/totoro_click.png") 10 10, auto;
+}
+
+
 
 
 
