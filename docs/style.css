@@ -181,12 +181,9 @@ h3 {
   line-height: 1.6;
   text-align: left;
 }
-/* Cursor Totoro en TODA la página, incluyendo el inicio */
+/* Cursor Totoro en toda la página */
 html, body, #intro-screen, #intro-screen * {
-  cursor: url("docs/totoro_click.png") 0 0, auto !important;
-}
-body {
-  cursor: url("docs/totoro_click.png"), auto;
+  cursor: url("totoro_click.png") 0 0, auto !important;
 }
 
 
