@@ -181,11 +181,9 @@ h3 {
   text-align: left;
 }
 /* Cursor Totoro en TODA la página (incluyendo el inicio) */
-.html, body, #intro-screen, #intro-screen * {
+html, body, #intro-screen, #intro-screen * {
   cursor: url("docs/CLICK.png") 0 0, auto !important;
 }
-
-
 
 
 
