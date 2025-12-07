@@ -183,8 +183,9 @@ h3 {
 }
 /* Cursor Totoro en toda la página */
 html, body, #intro-screen, #intro-screen * {
-  cursor: url("totoro_click.png") 0 0, auto !important;
+  cursor: url("totoro.png") 0 0, auto !important;
 }
+
 
 
 
