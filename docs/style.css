@@ -13,6 +13,7 @@ body {
   line-height: 1.6;
   background: #f0f6ff;
   overflow-x: hidden;
+  cursor: url("CLICK.png") , auto;
   /* OJO: QUITÉ "padding: 20 px;" porque estaba MAL ESCRITO */
 }
 
@@ -180,9 +181,6 @@ h3 {
   padding: 0 20px;
   line-height: 1.6;
   text-align: left;
-}
-body {
-  cursor: url('totoro.png'), auto; /* Usa tu imagen y `auto` si falla */
 }
 
 
