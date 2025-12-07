@@ -167,4 +167,10 @@ h3 {
     border-radius: 10px;
 }
 
+.texto-intro {
+  max-width: 800px;   /* ancho cómodo de lectura */
+  margin: 0 auto;     /* centra el bloque horizontalmente */
+  padding: 0 20px;    /* margencitos a los lados para que respire */
+  line-height: 1.6;   /* mejora la lectura */
+}
 
