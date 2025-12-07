@@ -166,11 +166,13 @@ h3 {
     object-fit: cover;     /* crops nicely */
     border-radius: 10px;
 }
-
+/* Márgenes para que el texto no ocupe todo el ancho */
 .texto-intro {
-  max-width: 800px;   /* ancho cómodo de lectura */
-  margin: 0 auto;     /* centra el bloque horizontalmente */
-  padding: 0 20px;    /* margencitos a los lados para que respire */
-  line-height: 1.6;   /* mejora la lectura */
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  line-height: 1.6;
+  text-align: left; /* opcional, pero se ve más profesional */
 }
+
 
