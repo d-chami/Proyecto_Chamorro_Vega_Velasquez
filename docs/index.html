@@ -36,7 +36,256 @@
  <p>Hayao Miyazaki es el director más reconocido del Studio Ghibli. Ha dirigido 10 películas junto al estudio, empezando con “El castillo en el cielo” en 1986 y estrenó su última película “El niño y la garza”en el año 2023. En cada una de las películas de su filmografía, al menos un personaje derrama lágrimas.</p>
 </div>
    <div style="position: relative; width: 100%; height: 0px; padding: 114% 0px 0px; overflow: hidden; will-change: transform;"><iframe loading="lazy" src="https://e.infogram.com/d0a6be9d-06e3-40d1-b3f1-ef433661d389?src=embed&amp;embed_type=responsive_iframe" title="Gender Equality in the Workplace" allowfullscreen="" allow="fullscreen" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none; padding: 0px; margin: 0px;"></iframe></div><div style="padding: 8px 0px; font-family: Arial; font-size: 13px; line-height: 15px; text-align: center; border-top: 1px solid rgb(218, 218, 218); margin: 0px 30px;"><a href="https://infogram.com/gender-equality-in-the-workplace-1h0n25opgvoql4p" target="_blank" style="color: rgb(152, 152, 152); text-decoration: none;">Gender Equality in the Workplace</a><br><a href="https://infogram.com" target="_blank" rel="nofollow" style="color: rgb(152, 152, 152); text-decoration: none;">Infogram</a></div>
- 
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segundos de Llanto - Studio Ghibli</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Alfa Slab One', cursive, sans-serif;
+            background: #E8F5E9;
+            padding: 40px 20px;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #2c5f2d;
+            margin-bottom: 40px;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
+            font-weight: 400;
+            padding-left: 0;
+            font-family: 'Alfa Slab One', cursive, sans-serif;
+            letter-spacing: 2px;
+        }
+        
+        .chart-wrapper {
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .chart-container {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            gap: 20px;
+            align-items: start;
+        }
+
+        .icons-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .bars-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .numbers-column {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        
+        .icon-container {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            transition: transform 0.3s;
+            overflow: hidden;
+            padding: 3px;
+        }
+        
+        .icon-container:hover {
+            transform: scale(1.15);
+        }
+        
+        .icon-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .icon-container.loading {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: loading 1.5s infinite;
+        }
+
+        @keyframes loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        .bar-row {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            min-height: 100px;
+        }
+        
+        .tears-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1px;
+            align-items: center;
+            max-width: 900px;
+        }
+        
+        .tear {
+            font-size: 17px;
+            line-height: 1;
+            animation: popIn 0.3s ease-out backwards;
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.15));
+        }
+        
+        @keyframes popIn {
+            from {
+                opacity: 0;
+                transform: scale(0);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .seconds-label {
+            font-size: 1.1em;
+            font-weight: 600;
+            color: #4a90e2;
+            min-width: 40px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            height: 100px;
+            margin-left: -10px;
+        }
+        
+        .legend {
+            margin-top: 30px;
+            text-align: center;
+            padding: 15px;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 12px;
+            color: #2c5f2d;
+            font-size: 1.1em;
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Segundos de llanto</h1>
+        
+        <div class="chart-wrapper">
+            <div class="chart-container">
+                <div class="icons-column" id="icons"></div>
+                <div class="bars-column" id="bars"></div>
+                <div class="numbers-column" id="numbers"></div>
+            </div>
+        </div>
+        
+        <div class="legend">
+            Cada lágrima 💧 representa 1 segundo de llanto en la película
+        </div>
+    </div>
+    
+    <script>
+        const movies = [
+            { title: "Castillo en el cielo", seconds: 2, iconUrl: "https://i.imgur.com/szdzhIX.png" },
+            { title: "Porco Rosso", seconds: 13, iconUrl: "https://i.imgur.com/xWopPq3.png" },
+            { title: "La princesa Mononoke", seconds: 34, iconUrl: "https://i.imgur.com/k9PG7n9.png" },
+            { title: "El viento se levanta", seconds: 38, iconUrl: "https://i.imgur.com/bV4L3Le.png" },
+            { title: "El niño y la garza", seconds: 57, iconUrl: "https://i.imgur.com/2utCwUL.png" },
+            { title: "Kiki: Entregas a domicilio", seconds: 74, iconUrl: "https://i.imgur.com/2RD3UjJ.png" },
+            { title: "Mi vecino Totoro", seconds: 92, iconUrl: "https://i.imgur.com/uIJF9lG.png" },
+            { title: "Ponyo", seconds: 101, iconUrl: "https://i.imgur.com/mnjWfgd.png" },
+            { title: "El increíble castillo vagabundo", seconds: 122, iconUrl: "https://i.imgur.com/2xaKwwV.png" },
+            { title: "El viaje de Chihiro", seconds: 158, iconUrl: "https://i.imgur.com/5iYSPmJ.png" }
+        ];
+        
+        const iconsColumn = document.getElementById('icons');
+        const barsColumn = document.getElementById('bars');
+        const numbersColumn = document.getElementById('numbers');
+        
+        movies.forEach((movie, movieIndex) => {
+            // Crear ícono
+            const iconContainer = document.createElement('div');
+            iconContainer.className = 'icon-container loading';
+            iconContainer.title = movie.title;
+            
+            const img = document.createElement('img');
+            img.crossOrigin = "anonymous";
+            
+            img.onload = function() {
+                iconContainer.classList.remove('loading');
+            };
+            
+            img.onerror = function() {
+                iconContainer.classList.remove('loading');
+                iconContainer.style.background = 'rgba(255, 200, 200, 0.9)';
+                iconContainer.innerHTML = '<span style="font-size: 20px;">❌</span>';
+            };
+            
+            img.src = movie.iconUrl;
+            img.alt = movie.title;
+            iconContainer.appendChild(img);
+            iconsColumn.appendChild(iconContainer);
+
+            // Crear barra
+            const barRow = document.createElement('div');
+            barRow.className = 'bar-row';
+
+            const tearsBar = document.createElement('div');
+            tearsBar.className = 'tears-bar';
+            
+            for (let i = 0; i < movie.seconds; i++) {
+                const tear = document.createElement('span');
+                tear.className = 'tear';
+                tear.textContent = '💧';
+                tear.style.animationDelay = `${(movieIndex * 0.05) + (i * 0.003)}s`;
+                tearsBar.appendChild(tear);
+            }
+
+            barRow.appendChild(tearsBar);
+            barsColumn.appendChild(barRow);
+
+            // Crear número
+            const secondsLabel = document.createElement('div');
+            secondsLabel.className = 'seconds-label';
+            secondsLabel.textContent = movie.seconds;
+            numbersColumn.appendChild(secondsLabel);
+        });
+    </script>
+</body>
+</html>
 <div class="two-column-layout">
 
     <!-- LEFT STICKY PANEL -->
