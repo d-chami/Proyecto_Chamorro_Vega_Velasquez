@@ -36,6 +36,194 @@
  <p>Hayao Miyazaki es el director más reconocido del Studio Ghibli. Ha dirigido 10 películas junto al estudio, empezando con “El castillo en el cielo” en 1986 y estrenó su última película “El niño y la garza”en el año 2023. En cada una de las películas de su filmografía, al menos un personaje derrama lágrimas.</p>
 </div>
    <div style="position: relative; width: 100%; height: 0px; padding: 114% 0px 0px; overflow: hidden; will-change: transform;"><iframe loading="lazy" src="https://e.infogram.com/d0a6be9d-06e3-40d1-b3f1-ef433661d389?src=embed&amp;embed_type=responsive_iframe" title="Gender Equality in the Workplace" allowfullscreen="" allow="fullscreen" style="position: absolute; width: 100%; height: 100%; top: 0px; left: 0px; border: none; padding: 0px; margin: 0px;"></iframe></div><div style="padding: 8px 0px; font-family: Arial; font-size: 13px; line-height: 15px; text-align: center; border-top: 1px solid rgb(218, 218, 218); margin: 0px 30px;"><a href="https://infogram.com/gender-equality-in-the-workplace-1h0n25opgvoql4p" target="_blank" style="color: rgb(152, 152, 152); text-decoration: none;">Gender Equality in the Workplace</a><br><a href="https://infogram.com" target="_blank" rel="nofollow" style="color: rgb(152, 152, 152); text-decoration: none;">Infogram</a></div>
+    <div class="ghibli-widget">
+    <style>
+        .ghibli-widget * {
+            box-sizing: border-box;
+        }
+
+        .ghibli-widget {
+            max-width: 950px;
+            margin: 40px auto;
+            padding: 20px;
+            font-family: 'Alfa Slab One', cursive, sans-serif;
+        }
+
+        .ghibli-widget h1 {
+            text-align: center;
+            color: #2c5f2d;
+            margin-bottom: 30px;
+            font-size: 2.6em;
+            letter-spacing: 2px;
+        }
+
+        .ghibli-widget .chart-wrapper {
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        }
+
+        .ghibli-widget .chart-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .ghibli-widget .movie-row-complete {
+            display: grid;
+            grid-template-columns: 90px 1fr auto;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .ghibli-widget .icon-container {
+            width: 90px;
+            height: 90px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fffbe7;
+            border-radius: 50%;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+            overflow: hidden;
+            padding: 3px;
+        }
+
+        .ghibli-widget .icon-container.special-bg {
+            background: #fbf7ec;
+        }
+
+        .ghibli-widget .icon-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .ghibli-widget .tears-bar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            align-items: center;
+        }
+
+        .ghibli-widget .tear {
+            width: 14px;
+            height: 18px;
+            background: linear-gradient(135deg, #4FC3F7, #03A9F4);
+            border-radius: 50% 0 50% 50%;
+            transform: rotate(-45deg);
+            box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5),
+                        inset 2px 2px 4px rgba(0,0,0,0.1),
+                        0 2px 4px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .ghibli-widget .tear::before {
+            content: "";
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            width: 4px;
+            height: 4px;
+            background: rgba(255,255,255,0.6);
+            border-radius: 50%;
+        }
+
+        .ghibli-widget .seconds-label {
+            font-size: 1.1em;
+            color: #4a90e2;
+            font-weight: 600;
+            min-width: 40px;
+        }
+
+        .ghibli-widget .legend {
+            text-align: center;
+            margin-top: 20px;
+            padding: 12px;
+            border-radius: 12px;
+            background: rgba(255,255,255,0.5);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            font-size: 1em;
+            color: #2c5f2d;
+        }
+
+        .ghibli-widget .legend-tear {
+            width: 16px;
+            height: 20px;
+            background: linear-gradient(135deg, #4FC3F7, #03A9F4);
+            border-radius: 50% 0 50% 50%;
+            transform: rotate(-45deg);
+            display: inline-block;
+        }
+    </style>
+
+    <h1>Segundos de llanto</h1>
+
+    <div class="chart-wrapper">
+        <div class="chart-container" id="chart-ghibli"></div>
+    </div>
+
+    <div class="legend">
+        <span class="legend-tear"></span>
+        <span>Cada lágrima representa 1 segundo de llanto en la película</span>
+    </div>
+
+    <script>
+        const moviesGhibli = [
+            { title: "Castillo en el cielo", seconds: 2, iconUrl: "https://i.imgur.com/epdIHza.png", duration: "2h 4m" },
+            { title: "Porco Rosso", seconds: 13, iconUrl: "https://i.imgur.com/aLRyhQt.jpeg", duration: "1h 29m" },
+            { title: "La princesa Mononoke", seconds: 34, iconUrl: "https://i.imgur.com/8hAJqnJ.jpeg", duration: "2h 13m" },
+            { title: "El viento se levanta", seconds: 38, iconUrl: "https://i.imgur.com/7bzjWLq.jpeg", duration: "2h 6m" },
+            { title: "El niño y la garza", seconds: 57, iconUrl: "https://i.imgur.com/Z9dIm12.jpeg", duration: "2h 4m" },
+            { title: "Kiki: Entregas a domicilio", seconds: 74, iconUrl: "https://i.imgur.com/3L0DkKG.jpeg", duration: "1h 52m" },
+            { title: "Mi vecino Totoro", seconds: 92, iconUrl: "https://i.imgur.com/23aWt8y.png", duration: "1h 27m" },
+            { title: "Ponyo", seconds: 101, iconUrl: "https://i.imgur.com/MCCObiQ.png", duration: "1h 43m" },
+            { title: "El increíble castillo vagabundo", seconds: 122, iconUrl: "https://i.imgur.com/dZcMYcg.png", duration: "1h 59m" },
+            { title: "El viaje de Chihiro", seconds: 158, iconUrl: "https://i.imgur.com/OO7L1Jv.png", duration: "2h 5m" }
+        ];
+
+        const chartG = document.getElementById("chart-ghibli");
+
+        moviesGhibli.forEach((movie) => {
+            const row = document.createElement("div");
+            row.className = "movie-row-complete";
+
+            const icon = document.createElement("div");
+            icon.className = "icon-container";
+            if (movie.title === "El niño y la garza") icon.classList.add("special-bg");
+
+            const img = document.createElement("img");
+            img.src = movie.iconUrl;
+            img.alt = movie.title;
+            icon.appendChild(img);
+
+            const bar = document.createElement("div");
+            bar.className = "tears-bar";
+
+            for (let i = 0; i < movie.seconds; i++) {
+                const t = document.createElement("div");
+                t.className = "tear";
+                bar.appendChild(t);
+            }
+
+            const label = document.createElement("div");
+            label.className = "seconds-label";
+            label.textContent = movie.seconds;
+
+            row.appendChild(icon);
+            row.appendChild(bar);
+            row.appendChild(label);
+
+            chartG.appendChild(row);
+        });
+    </script>
+</div>
 <div class="two-column-layout">
 
     <!-- LEFT STICKY PANEL -->
