@@ -30,3 +30,8 @@ function startTearAnimation() {
     setTimeout(() => tear.remove(), 5000);
   }, 500);
 }
+
+const label = document.createElement('div');
+label.className = 'hover-text';
+label.textContent = movie.title;
+iconContainer.appendChild(label);
