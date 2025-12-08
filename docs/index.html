@@ -275,7 +275,11 @@
             secondsLabel.className = 'seconds-label';
             secondsLabel.textContent = movie.seconds;
 
-            rowComplete.appendChild(iconContainer);
+          const label = document.createElement('div');
+label.className = 'hover-text';
+label.textContent = movie.title;
+iconContainer.appendChild(label);
+          rowComplete.appendChild(iconContainer);
             rowComplete.appendChild(tearsBar);
             rowComplete.appendChild(secondsLabel);
 
