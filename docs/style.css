@@ -191,27 +191,6 @@ h3 {
     height: 100px; /* coincide con el tamaño de los íconos */
 }
 
-.ghibli-tears-chart .tears-bar {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    align-content: center;
-    align-self: center;
-    max-width: 900px;
-    
-    /* NUEVO → evita que crezca verticalmente */
-    height: 60px; 
-    overflow: hidden;
-
-    padding: 5px 0;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-
-
-
-
 
 
 
