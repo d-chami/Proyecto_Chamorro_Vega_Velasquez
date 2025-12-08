@@ -30,8 +30,15 @@ function startTearAnimation() {
     setTimeout(() => tear.remove(), 5000);
   }, 500);
 }
+const iconContainer = document.createElement('div');
+iconContainer.className = 'icon-container loading';
+if (movie.title === "El niño y la garza") iconContainer.classList.add('special-bg');
+iconContainer.title = `${movie.title}\nDuración: ${movie.duration}`;
 
-const label = document.createElement('div');
-label.className = 'hover-text';
-label.textContent = movie.title;
-iconContainer.appendChild(label);
+// ▼ ADD THIS HERE ▼
+const hoverLabel = document.createElement('div');
+hoverLabel.className = 'hover-text';
+hoverLabel.textContent = movie.title;
+iconContainer.appendChild(hoverLabel);
+// ▲ ADD THIS HERE ▲
+
