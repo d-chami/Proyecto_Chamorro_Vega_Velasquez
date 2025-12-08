@@ -43,8 +43,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Segundos de Llanto - Studio Ghibli</title>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+
     <style>
-        /* CSS APLICADO SOLO AL GRÁFICO (para no afectar el resto de tu web) */
         .ghibli-tears-chart {
             font-family: 'Alfa Slab One', cursive, sans-serif;
             background: #E8F5E9; 
@@ -61,10 +61,7 @@
             color: #2c5f2d;
             margin-bottom: 40px;
             font-size: 3em;
-            text-shadow: 2px 2px 4px rgba(255,255,255,0.5);
             font-weight: 400;
-            padding-left: 0;
-            font-family: 'Alfa Slab One', cursive, sans-serif;
             letter-spacing: 2px;
         }
 
@@ -83,25 +80,14 @@
             align-items: start;
         }
 
-        .ghibli-tears-chart .icons-column {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .ghibli-tears-chart .bars-column {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
+        .ghibli-tears-chart .icons-column,
+        .ghibli-tears-chart .bars-column,
         .ghibli-tears-chart .numbers-column {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
 
-        /* Color base para todos los iconos */
         .ghibli-tears-chart .icon-container {
             width: 100px;
             height: 100px;
@@ -110,26 +96,19 @@
             justify-content: center;
             background: #fffbe7; 
             border-radius: 50%;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             border: 2px solid #fff;
-            transition: transform 0.3s;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
             overflow: hidden;
             padding: 3px;
-        }
-        
-        /* Color de excepción para El niño y la garza */
-        .ghibli-tears-chart .nino-garza-icon {
-            background: #fbf7ec;
+            transition: transform 0.3s;
         }
 
         .ghibli-tears-chart .icon-container:hover {
             transform: scale(1.15);
         }
 
-        .ghibli-tears-chart .icon-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
+        .ghibli-tears-chart .nino-garza-icon {
+            background: #fbf7ec;
         }
 
         .ghibli-tears-chart .icon-container.loading {
@@ -143,27 +122,29 @@
             100% { background-position: -200% 0; }
         }
 
-        /* CORRECCIÓN DE ALINEACIÓN VERTICAL FINAL */
         .ghibli-tears-chart .bar-row {
             display: flex;
-            align-items: center; 
+            align-items: center;
             gap: 15px;
-            height: 100px; /* Altura fija para centrado exacto */
+            height: 100px;
         }
 
-        /* Modificación para asegurar el centrado del contenido wrapped */
+        /* 💚 CORRECCIÓN FINAL: lágrimas alineadas verticalmente */
         .ghibli-tears-chart .tears-bar {
             display: flex;
             flex-wrap: wrap;
             gap: 4px;
-            /* Usamos margin-top: auto; y margin-bottom: auto; como truco */
+            align-content: center;
+            align-self: center;
+            max-width: 900px;
+
+            /* TRUCO PARA ALINEAR PERFECTO */
+            height: 60px; 
+            overflow: hidden;
+
+            padding: 5px 0;
             margin-top: auto;
             margin-bottom: auto;
-            align-content: center; /* Intenta centrar las filas de lágrimas */
-            align-self: center; /* Alinea el contenedor de lágrimas dentro de bar-row */
-            max-width: 900px;
-            height: 100%; 
-            padding: 5px 0; /* Pequeño padding para evitar que las lágrimas toquen los bordes */
         }
 
         .ghibli-tears-chart .tear {
@@ -191,14 +172,8 @@
         }
 
         @keyframes popIn {
-            from {
-                opacity: 0;
-                transform: scale(0);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1);
-            }
+            from { opacity: 0; transform: scale(0); }
+            to { opacity: 1; transform: scale(1); }
         }
 
         .ghibli-tears-chart .seconds-label {
@@ -207,9 +182,9 @@
             color: #4a90e2;
             min-width: 40px;
             text-align: left;
+            height: 100px;
             display: flex;
             align-items: center;
-            height: 100px;
             margin-left: -10px;
         }
 
@@ -221,7 +196,6 @@
             border-radius: 12px;
             color: #2c5f2d;
             font-size: 1.1em;
-            backdrop-filter: blur(10px);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -237,12 +211,12 @@
             box-shadow: inset -2px -2px 4px rgba(255,255,255,0.5), 
                         inset 2px 2px 4px rgba(0,0,0,0.1),
                         0 2px 4px rgba(0,0,0,0.2);
-            display: inline-block;
         }
     </style>
 </head>
+
 <body>
-    
+
     <div class="ghibli-tears-chart">
         <div class="container">
             <h1>Segundos de llanto</h1>
@@ -281,37 +255,30 @@
         const numbersColumn = document.getElementById('numbers');
         
         movies.forEach((movie, movieIndex) => {
-            // Crear ícono
+            
             const iconContainer = document.createElement('div');
             iconContainer.className = 'icon-container loading';
             
-            // Lógica para el color específico de "El niño y la garza"
             if (movie.title === "El niño y la garza") {
                 iconContainer.classList.add('nino-garza-icon');
             }
-            
-            // Etiqueta: Título y Duración Total
+
             iconContainer.title = `${movie.title} | Duración: ${movie.totalDuration}`;
             
             const img = document.createElement('img');
             img.crossOrigin = "anonymous";
             
-            img.onload = function() {
-                iconContainer.classList.remove('loading');
-            };
-            
-            img.onerror = function() {
+            img.onload = () => iconContainer.classList.remove('loading');
+            img.onerror = () => {
                 iconContainer.classList.remove('loading');
                 iconContainer.style.background = 'rgba(255, 200, 200, 0.9)';
                 iconContainer.innerHTML = '<span style="font-size: 20px;">❌</span>';
             };
             
             img.src = movie.iconUrl;
-            img.alt = movie.title;
             iconContainer.appendChild(img);
             iconsColumn.appendChild(iconContainer);
 
-            // Crear barra
             const barRow = document.createElement('div');
             barRow.className = 'bar-row';
 
@@ -328,13 +295,13 @@
             barRow.appendChild(tearsBar);
             barsColumn.appendChild(barRow);
 
-            // Crear número
             const secondsLabel = document.createElement('div');
             secondsLabel.className = 'seconds-label';
             secondsLabel.textContent = movie.seconds;
             numbersColumn.appendChild(secondsLabel);
         });
     </script>
+
 </body>
 </html>
 <div class="two-column-layout">
