@@ -182,14 +182,62 @@ h3 {
   line-height: 1.6;
   text-align: left;
 }
-/* CORRECCIÓN DE ALINEACIÓN PERFECTA */
-
-.ghibli-tears-chart .bar-row {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    height: 100px; /* coincide con el tamaño de los íconos */
+/* CONTENEDOR EN GRID — cada película es UNA FILA */
+.chart-container {
+  display: grid;
+  grid-template-columns: 130px 1fr 60px; /* icono | lágrimas | número */
+  grid-auto-rows: 120px; /* TODAS LAS FILAS MISMOS 120px */
+  width: 100%;
 }
+
+/* ÍCONO */
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+}
+
+.icon-container img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+}
+
+/* LÁGRIMAS EN LA MISMA FILA SIEMPRE */
+.bar-row {
+  display: flex;
+  align-items: center;
+  height: 120px;
+}
+
+.tears-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  align-content: center;
+  height: 100%;
+}
+
+/* LÁGRIMA */
+.tear {
+  width: 16px;
+  height: 20px;
+  background: linear-gradient(135deg, #4FC3F7 0%, #29B6F6 50%, #03A9F4 100%);
+  border-radius: 50% 0 50% 50%;
+  transform: rotate(-45deg);
+}
+
+/* NÚMERO */
+.seconds-label {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  color: #4a90e2;
+}
+
 
 
 
