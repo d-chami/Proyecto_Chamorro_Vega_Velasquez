@@ -343,7 +343,17 @@ h3 {
   line-height: 1.6;
   color: #444;
 }
+.cloud-content {
+  animation: float 6s ease-in-out infinite;
+}
 
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  100% { transform: translateY(0); }
+}
+
+background: rgba(250, 247, 242, 0.85);
 
 
 
