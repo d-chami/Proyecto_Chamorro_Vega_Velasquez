@@ -298,6 +298,51 @@ h3 {
   opacity: 1;
 }
 
+.cloud-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+}
+
+.cloud-content {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
+  align-items: center;
+
+  max-width: 1000px;
+  padding: 2.5rem;
+
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 40px;
+
+  /* cloud effect */
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.08),
+    inset 0 0 60px rgba(255, 255, 255, 0.9);
+
+  backdrop-filter: blur(10px);
+}
+
+.cloud-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  object-fit: cover;
+}
+
+.cloud-text h2 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.cloud-text p {
+  margin: 0;
+  line-height: 1.6;
+  color: #444;
+}
 
 
 
