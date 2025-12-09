@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.20.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "stroke": null}, "axis": {"grid": false, "labelColor": "#333", "labelFont": "sans-serif", "titleColor": "#333", "titleFont": "sans-serif"}, "legend": {"labelFont": "sans-serif", "labelFontSize": 11, "symbolSize": 120}}, "layer": [{"mark": {"type": "area", "interpolate": "monotone"}, "encoding": {"color": {"field": "categoria", "legend": {"columns": 4, "direction": "horizontal", "orient": "bottom", "title": null}, "scale": {"domain": ["Conflicto", "Decepcion personal", "Dolor fisico", "Dolor psicologico", "Dolor psicologico y dolor fisico", "Dolor psicologico/Dolor fisico", "Evento positivo", "Perdida", "Perdida y dolor psicologico", "Sufrimiento ajeno", "Sufrimiento psicologico"], "range": ["#FFF7E6", "#F3E6C8", "#E8DDB5", "#DCECC9", "#C8E0CC", "#BFD7EA", "#D7C9E3", "#F4C6B8", "#E8B4A6", "#B7D3A8", "#9FC6B8"]}, "type": "nominal"}, "tooltip": [{"field": "categoria", "title": "Categor\u00eda", "type": "nominal"}, {"aggregate": "sum", "field": "duracion", "title": "Duraci\u00f3n", "type": "quantitative"}], "x": {"field": "Ano", "title": "A\u00f1o", "type": "ordinal"}, "y": {"aggregate": "sum", "field": "duracion", "stack": "zero", "title": "Duraci\u00f3n total", "type": "quantitative"}}}, {"mark": {"type": "line", "color": "#444", "strokeDash": [5, 4], "strokeWidth": 2}, "encoding": {"x": {"field": "Ano", "type": "ordinal"}, "y": {"aggregate": "sum", "field": "duracion", "type": "quantitative"}}}], "background": "#eef6ff", "data": {"name": "data-2aca8cd1d4197ed77a61ffbc0024a066"}, "height": 280, "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.20.1.json", "datasets": {"data-2aca8cd1d4197ed77a61ffbc0024a066": [{"Ano": 2008.0, "categoria": "Conflicto", "duracion": 12.0}, {"Ano": 2023.0, "categoria": "Decepcion personal", "duracion": 3.0}, {"Ano": 1992.0, "categoria": "Dolor fisico", "duracion": 3.0}, {"Ano": 1986.0, "categoria": "Dolor psicologico", "duracion": 1.0}, {"Ano": 1988.0, "categoria": "Dolor psicologico", "duracion": 70.0}, {"Ano": 1989.0, "categoria": "Dolor psicologico", "duracion": 7.0}, {"Ano": 2001.0, "categoria": "Dolor psicologico", "duracion": 81.0}, {"Ano": 2008.0, "categoria": "Dolor psicologico", "duracion": 80.0}, {"Ano": 2013.0, "categoria": "Dolor psicologico", "duracion": 16.0}, {"Ano": 2023.0, "categoria": "Dolor psicologico", "duracion": 10.0}, {"Ano": 2001.0, "categoria": "Dolor psicologico y dolor fisico", "duracion": 18.0}, {"Ano": 2013.0, "categoria": "Dolor psicologico/Dolor fisico", "duracion": 2.0}, {"Ano": 1986.0, "categoria": "Evento positivo", "duracion": 1.0}, {"Ano": 1988.0, "categoria": "Evento positivo", "duracion": 22.0}, {"Ano": 1989.0, "categoria": "Evento positivo", "duracion": 15.0}, {"Ano": 1992.0, "categoria": "Evento positivo", "duracion": 10.0}, {"Ano": 2001.0, "categoria": "Evento positivo", "duracion": 30.0}, {"Ano": 2013.0, "categoria": "Evento positivo", "duracion": 14.0}, {"Ano": 2023.0, "categoria": "Evento positivo", "duracion": 18.0}, {"Ano": 1989.0, "categoria": "Perdida", "duracion": 3.0}, {"Ano": 1997.0, "categoria": "Perdida", "duracion": 34.0}, {"Ano": 2008.0, "categoria": "Perdida", "duracion": 9.0}, {"Ano": 2013.0, "categoria": "Perdida", "duracion": 6.0}, {"Ano": 2023.0, "categoria": "Perdida", "duracion": 26.0}, {"Ano": 2001.0, "categoria": "Perdida y dolor psicologico", "duracion": 20.0}, {"Ano": 1989.0, "categoria": "Sufrimiento ajeno", "duracion": 49.0}, {"Ano": 2001.0, "categoria": "Sufrimiento ajeno", "duracion": 9.0}, {"Ano": 2004.0, "categoria": "Sufrimiento ajeno", "duracion": 42.0}, {"Ano": 2004.0, "categoria": "Sufrimiento psicologico", "duracion": 80.0}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>
