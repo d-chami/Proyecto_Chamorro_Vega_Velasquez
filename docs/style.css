@@ -299,109 +299,86 @@ h3 {
 }
 
 NUBE 
-
-.cloud-wrapper {
+.cloud-blob-wrapper {
   display: flex;
   justify-content: center;
-  padding: 5rem 1rem;
+  padding: 4rem 1rem;
 }
 
-/* main cloud body */
-.cloud {
+.cloud-blob {
   position: relative;
-  max-width: 1000px;
   width: 100%;
+  max-width: 960px;
+  min-height: 240px;
 }
 
-/* cloud base */
-.cloud::before {
-  content: "";
-  position: absolute;
-  inset: 40px 20px;
-  background: rgba(255, 255, 255, 0.85);
-  filter: blur(12px);
-  border-radius: 120px;
-  z-index: 1;
-}
-
-/* cloud lobes */
-.cloud-lobe {
+/* the lobes = the puffy cloud “balls” */
+.cloud-blob .lobe {
   position: absolute;
   background: rgba(255, 255, 255, 0.9);
-  filter: blur(18px);
+  filter: blur(24px);
   border-radius: 50%;
-  z-index: 0;
 }
 
-/* lobe placement (hand-tuned for organic feel) */
-.l1 {
-  width: 240px;
-  height: 180px;
-  top: 0;
-  left: 60px;
+/* each lobe gets a different size/position for a random organic shape */
+.cloud-blob .l1 {
+  width: 260px; height: 200px;
+  top: -20px; left: 60px;
+}
+.cloud-blob .l2 {
+  width: 320px; height: 240px;
+  top: -40px; left: 240px;
+}
+.cloud-blob .l3 {
+  width: 280px; height: 220px;
+  top: 20px; right: 40px;
+}
+.cloud-blob .l4 {
+  width: 300px; height: 200px;
+  bottom: -20px; left: 150px;
 }
 
-.l2 {
-  width: 320px;
-  height: 220px;
-  top: -10px;
-  left: 300px;
-}
-
-.l3 {
-  width: 260px;
-  height: 200px;
-  top: 20px;
-  right: 40px;
-}
-
-.l4 {
-  width: 280px;
-  height: 210px;
-  bottom: 0;
-  left: 200px;
-}
-
-/* actual content layer */
-.cloud-content {
+/* content sits on top of lobes */
+.blob-content {
   position: relative;
   z-index: 2;
 
   display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 2rem;
   align-items: center;
 
-  padding: 4rem 3rem;
+  padding: 3rem 2rem;
 }
 
-/* image */
-.cloud-image img {
+.blob-image img {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 16px;
+  object-fit: cover;
 }
 
-/* text */
-.cloud-text h2 {
+.blob-text h2 {
   margin: 0 0 1rem;
   font-size: 1.7rem;
-  font-weight: 500;
 }
 
-.cloud-text p {
+.blob-text p {
   margin: 0;
-  line-height: 1.65;
+  line-height: 1.6;
   color: #444;
 }
-.cloud {
-  animation: drift 8s ease-in-out infinite;
-}
 
-@keyframes drift {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
-  100% { transform: translateY(0); }
+/* Responsive stack on small screens */
+@media (max-width: 768px) {
+  .blob-content {
+    grid-template-columns: 1fr;
+    padding: 2rem 1rem;
+  }
+
+  .cloud-blob .lobe {
+    filter: blur(28px);
+  }
 }
 
 
