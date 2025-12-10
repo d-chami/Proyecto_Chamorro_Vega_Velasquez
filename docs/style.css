@@ -304,8 +304,8 @@ h3 {
 
 .cloud-container {
   position: relative;
-  width: 90%;
-  max-width: 900px;
+  width: 110%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -345,8 +345,9 @@ img[src="YOUR_IMAGE.jpg"] {
 }
 
 .cloud-text {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
