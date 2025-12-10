@@ -307,6 +307,7 @@ h3 {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  transform: translateX(40px); /* mueve a la derecha */
 }
 
 .cloud-svg {
@@ -348,6 +349,7 @@ img[src="YOUR_IMAGE.jpg"] {
   font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
 
