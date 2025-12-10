@@ -1,0 +1,75 @@
+<section class="cry-section">
+    <div class="container">
+        <h1>Segundos de llanto</h1>
+
+        <div class="chart-wrapper">
+            <div class="chart-container" id="chart"></div>
+        </div>
+
+        <div class="legend">
+            <span class="legend-tear"></span>
+            <span>Cada lágrima representa 1 segundo de llanto en la película</span>
+        </div>
+    </div>
+
+    <script>
+        const movies = [
+            { title: "Castillo en el cielo", seconds: 2, iconUrl: "https://i.imgur.com/epdIHza.png", duration: "2h 4m" },
+            { title: "Porco Rosso", seconds: 13, iconUrl: "https://i.imgur.com/aLRyhQt.jpeg", duration: "1h 29m" },
+            { title: "La princesa Mononoke", seconds: 34, iconUrl: "https://i.imgur.com/8hAJqnJ.jpeg", duration: "2h 13m" },
+            { title: "El viento se levanta", seconds: 38, iconUrl: "https://i.imgur.com/7bzjWLq.jpeg", duration: "2h 6m" },
+            { title: "El niño y la garza", seconds: 57, iconUrl: "https://i.imgur.com/Z9dIm12.jpeg", duration: "2h 4m" },
+            { title: "Kiki: Entregas a domicilio", seconds: 74, iconUrl: "https://i.imgur.com/3L0DkKG.jpeg", duration: "1h 52m" },
+            { title: "Mi vecino Totoro", seconds: 92, iconUrl: "https://i.imgur.com/23aWt8y.png", duration: "1h 27m" },
+            { title: "Ponyo", seconds: 101, iconUrl: "https://i.imgur.com/MCCObiQ.png", duration: "1h 43m" },
+            { title: "El increíble castillo vagabundo", seconds: 122, iconUrl: "https://i.imgur.com/dZcMYcg.png", duration: "1h 59m" },
+            { title: "El viaje de Chihiro", seconds: 158, iconUrl: "https://i.imgur.com/OO7L1Jv.png", duration: "2h 5m" }
+        ];
+
+        const chart = document.querySelector('.ghibli-chart-wrapper #chart');
+
+        movies.forEach((movie, movieIndex) => {
+            const rowComplete = document.createElement('div');
+            rowComplete.className = 'movie-row-complete';
+
+            const iconContainer = document.createElement('div');
+            iconContainer.className = 'icon-container loading';
+            if (movie.title === "El niño y la garza") iconContainer.classList.add('special-bg');
+            iconContainer.title = `${movie.title}\nDuración: ${movie.duration}`;
+
+            const img = document.createElement('img');
+            img.crossOrigin = "anonymous";
+            img.onload = () => iconContainer.classList.remove('loading');
+            img.onerror = () => {
+                iconContainer.classList.remove('loading');
+                iconContainer.style.background = 'rgba(255, 200, 200, 0.9)';
+                iconContainer.innerHTML = '<span style="font-size: 20px;">❌</span>';
+            };
+            img.src = movie.iconUrl;
+            img.alt = movie.title;
+            iconContainer.appendChild(img);
+
+            const tearsBar = document.createElement('div');
+            tearsBar.className = 'tears-bar';
+            for (let i = 0; i < movie.seconds; i++) {
+                const tear = document.createElement('div');
+                tear.className = 'tear';
+                tear.style.animationDelay = `${(movieIndex*0.05)+(i*0.003)}s`;
+                tearsBar.appendChild(tear);
+            }
+
+            const secondsLabel = document.createElement('div');
+            secondsLabel.className = 'seconds-label';
+            secondsLabel.textContent = movie.seconds;
+
+          const label = document.createElement('div');
+label.className = 'hover-text';
+label.textContent = movie.title;
+iconContainer.appendChild(label);
+          rowComplete.appendChild(iconContainer);
+            rowComplete.appendChild(tearsBar);
+            rowComplete.appendChild(secondsLabel);
+
+            chart.appendChild(rowComplete);
+        });
+    </script>
