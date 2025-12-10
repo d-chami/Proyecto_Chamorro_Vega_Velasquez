@@ -1,6 +1,7 @@
 # Documentación
 
 **Título:** Las lágrimas de Miyazaki.
+
 **Resumen:** A lo largo de este reportaje, se exploran las 10 películas que constituyen la filmografía de Hayao Miyazaki como director para Studio Ghibli. Estás películas son: Castillo en el cielo (1986), Mi vecino Totoro (1988), Kiki: Entregas a domicilio (1989), Porco Rosso (1992), Princesa Mononoke (1997), Viaje de Chihiro del (2001), El castillo ambulante (2004), Ponyo (2008), El viento se levanta (2013) y El niño y la garza (2023). 
 
 ¿El criterio que las une? La presencia de lágrimas a lo largo de su duración. Por supuesto, quien llora, porque lloran y que se puede abstraer de ese llanto va cambiando. Nuestro reportaje busca analizar las lágrimas derramadas por los personajes del Studio Ghibli, analizando la complejidad emocional de sus películas desde una perspectiva distinta.
