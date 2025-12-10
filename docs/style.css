@@ -355,3 +355,17 @@ img[src="YOUR_IMAGE.jpg"] {
   background-color: #eef6ff;
   padding: 40px 0;
 }
+/* ===== ALTAIR EMBED — NO SCROLL ===== */
+
+.chart-embed {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; /* ✅ hides scrollbars */
+}
+
+.chart-embed iframe {
+  width: 100%;
+  height: 420px;   /* ✅ MUST match chart height */
+  border: none;
+  overflow: hidden;
+}
