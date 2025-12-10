@@ -352,10 +352,70 @@ img[src="YOUR_IMAGE.jpg"] {
 }
 
 
+.ghibli-cloud-section {
+  display: flex;
+  justify-content: center;
+  padding: 7rem 1rem;
+}
 
+.cloud-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+}
 
+/* cloud appearance */
+.cloud-svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 28px 55px rgba(0, 0, 0, 0.12));
+}
 
+/* content overlay */
+.cloud-content {
+  position: absolute;
+  top: 20%;
+  left: 12%;
+  width: 76%;
+  height: 60%;
 
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3rem;
+  align-items: center;
+}
 
+/* image */
+.cloud-image img {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+}
 
+/* text */
+.cloud-text h2 {
+  margin: 0 0 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
 
+.cloud-text p {
+  margin: 0;
+  line-height: 1.7;
+  color: #444;
+  font-size: 1.05rem;
+}
+@media (max-width: 768px) {
+  .cloud-content {
+    grid-template-columns: 1fr;
+    top: 22%;
+    left: 10%;
+    width: 80%;
+    height: auto;
+  }
+
+  .ghibli-cloud-section {
+    padding: 5rem 1rem;
+  }
+}
