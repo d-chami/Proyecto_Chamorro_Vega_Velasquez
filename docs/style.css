@@ -131,7 +131,7 @@ h3 {
     position: sticky;
     top: 0;
     height: 100vh;           /* full height */
-    background: #eef6ff;
+    background: #f7f9fc;
     border-right: 1px solid #ddd;
     overflow-y: auto;        /* if sidebar gets long */
 }
