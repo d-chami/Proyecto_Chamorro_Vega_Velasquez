@@ -24,4 +24,4 @@ Al terminar esta investigación, se puede concluir que hay, en efecto, varios pa
 | Lágrimas         |         |         |   X    |
 | Sticky           |         |         |   X    |
 | Color de fondo   |         |    X    |        |
-| Tipografía       |         |         |   X    |
+| Tipografía       |         |    X    |        |
