@@ -370,11 +370,10 @@ img[src="YOUR_IMAGE.jpg"] {
   overflow: hidden;
 }
 
-/* ===== FOOTER LAYOUT FIX ===== */
-
 .site-footer {
   width: 100%;
   padding: 1.5rem 2rem;
+  background: transparent;  /* or same bg as page */
 }
 
 .footer-content {
@@ -383,7 +382,7 @@ img[src="YOUR_IMAGE.jpg"] {
 
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ✅ text left, image right */
+  justify-content: space-between;
   gap: 1rem;
 }
 
@@ -393,9 +392,8 @@ img[src="YOUR_IMAGE.jpg"] {
   color: #555;
 }
 
-/* SMALL IMAGE ON RIGHT */
 .footer-image {
-  width: 70px;      /* ✅ small size */
+  width: 70px;       /* adjust to make image small */
   height: auto;
   opacity: 0.85;
 }
