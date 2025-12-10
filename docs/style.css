@@ -297,7 +297,7 @@ h3 {
   opacity: 1;
 }
 .ghibli-cloud-section {
-  width: 120%;
+  width: 100%;
   margin-top: 60px;
   position: relative;
 }
@@ -348,6 +348,7 @@ img[src="YOUR_IMAGE.jpg"] {
   font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
 
