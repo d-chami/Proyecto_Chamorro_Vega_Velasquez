@@ -1,0 +1,53 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+# 1. Load Data
+df = pd.read_csv('/content/Películas Ghibli - Películas Ghibli.csv')
+
+# 2. Process Data
+# Create the category column
+df['Category'] = df.apply(lambda row: 'Femenino' if row['Genero'] == 'Femenino'
+                          else f"Masculino - {row['Protagonismo']}", axis=1)
+
+# Calculate percentages and sort by Year ('Ano')
+# We index by Year AND Movie to sort chronologically, then drop Year for plotting
+plot_data = pd.crosstab(
+    index=[df['Ano'], df['Pelicula']],
+    columns=df['Category'],
+    normalize='index'
+) * 100
+
+plot_data.index = plot_data.index.droplevel(0) # Keep only movie titles for x-axis
+
+# 3. Visualization
+custom_colors = {
+    'Femenino': '#F4C6B8',
+    'Masculino - Incidental': '#9FC6B8',
+    'Masculino - Protagonista': '#BFD7EA',
+    'Masculino - Secundario': '#D7C9E3'
+}
+# Map colors to the columns present in the data
+plot_colors = [custom_colors.get(col, '#CCCCCC') for col in plot_data.columns]
+
+# Plot
+fig, ax = plt.subplots(figsize=(14, 8))
+plot_data.plot(kind='bar', stacked=True, color=plot_colors, ax=ax, width=0.8)
+
+# Styling
+ax.set_title('Distribución de Género por Película (Masculino subdividido por Protagonismo)')
+ax.set_xlabel('Película')
+ax.set_ylabel('Porcentaje (%)')
+plt.xticks(rotation=45, ha='right')
+plt.legend(title='Categoría', bbox_to_anchor=(1.0, 1), loc='upper left')
+
+# 4. Add Labels (Restored Logic: Only show label if > 0)
+for container in ax.containers:
+    # Create labels: format as percentage if > 0, otherwise leave empty
+    labels = [f'{v.get_height():.1f}%' if v.get_height() > 0 else '' for v in container]
+
+    # Apply labels to the center of the bars
+    ax.bar_label(container, labels=labels, label_type='center', color='white', fontsize=9, weight='bold')
+
+plt.tight_layout()
+plt.savefig('gender_distribution_ghibli.jpg', dpi=300)
+plt.show()
