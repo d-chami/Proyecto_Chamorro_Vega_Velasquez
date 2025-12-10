@@ -314,6 +314,7 @@ h3 {
   width: 100%;
   height: auto;
   display: block;
+  transform: translateX(40px);
 }
 
 .cloud-content {
@@ -349,6 +350,7 @@ img[src="YOUR_IMAGE.jpg"] {
   font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
 
