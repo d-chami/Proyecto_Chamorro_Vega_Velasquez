@@ -304,13 +304,13 @@ h3 {
 
 .cloud-container {
   position: relative;
-  width: 110%;
-  max-width: 1200px;
+  width: 100%;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
 .cloud-svg {
-  width: 120%;
+  width: 100%;
   height: auto;
   display: block;
 }
@@ -330,8 +330,8 @@ h3 {
 }
 
 .cloud-pic {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 60px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -348,6 +348,7 @@ img[src="YOUR_IMAGE.jpg"] {
   font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
 
