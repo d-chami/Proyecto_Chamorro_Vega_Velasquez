@@ -2,16 +2,12 @@
 
 La página se organiza como una narración progresiva: primero presenta el tema y su relevancia, luego incorpora escenas y datos que amplían la perspectiva, y finalmente ofrece conclusiones o reflexiones que cierran el relato informativo. El usuario avanza de arriba hacia abajo, siguiendo una secuencia lógica donde cada sección actúa como un capítulo que amplía el anterior.
 
-El desplazamiento vertical permite que cada bloque de contenido tenga su propio protagonismo, evitando la saturación y manteniendo una lectura guiada. Las visualizaciones están distribuidas estratégicamente para funcionar como apoyos narrativos, ubicadas justo después de los párrafos que entregan el marco interpretativo necesario.
+La estructura narrativa que decidimos seguir empieza con la imágen de Chihiro de El viaje de Chihiro llorando, sus lágrimas Ghibli exageradas y potentes. Tras hacer click, se puede acceder al desarrollo de la página, donde se pueden ver lágrimas cayendo al rededor del título "las lágrimas de Miyazaki", haciendo referencia a la temática que se abordará en el reportaje. Además, habrá una cita de la película "El castillo ambulante" como preambulo de las temáticas que tocara el reportaje.
 
-El relato mezcla descripciones, datos y contexto histórico con una redacción clara y accesible, lo que facilita que los lectores se involucren emocionalmente sin perder la perspectiva analítica. Los títulos y subtítulos funcionan como señales que ordenan el ritmo de lectura.
+Posteriomente, un apartado explicará que son las lágrimas Ghibli. Resaltando su importancia expresiva dentro de las pelícuas del estudio de animación. Tambien, habra un carrusel de tarjetas que contendra imágenes de las 10 películas que vimos y un breve resumen de su trama, el carrusel se va a mover para mostrar todas las películas.
 
-La redacción refuerza la historia de las visualizaciones al anticipar lo que el lector verá luego en los gráficos o imágenes. Haciendo que el texto y , las visualizaciones sean complementarios.
+Por el lado izquierdo estamos mostrando quienes conforman el equipo detrás de la creación de la página web y qué películas eligió cada una, explicando la metodología y la motivación durante el proceso de recolección de datos. Por el lado derecho, mostraremos las visualizaciones realizadas con el fin de explicar de forma gráfica el análisis de las películas hecho a partir de los datos obtenidos.
 
-Las decisiones visuales del proyecto estuvieron guiadas por una referencia estética clara: el universo audiovisual de Studio Ghibli. Nos inspiramos en la calidez, la suavidad cromática y la atmósfera contemplativa que caracterizan sus películas, utilizando estos elementos como base para construir el significado visual de nuestra historia. 
+Al final de nuestra webstory habrá un mosaico con diferentes gifs de personajas del Studio Ghibli llorando y las conclusiones finales tras el análisis de los datos.
 
-La paleta de colores retoma tonalidades presentes en varios de sus filmes con el fin de transmitir cercanía, nostalgia y una sensación de tránsito emocional que acompaña el relato.
-
-El logo y los elementos gráficos incorporan formas y texturas que evocan ilustraciones hechas a mano, un sello propio del estudio que aporta un tono más humano y narrativo al sitio. Optamos por tipografías que reforzaran esa estética: legibles, cálidas, con un diseño que recuerda la simplicidad elegante de los créditos y rótulos tradicionales de Ghibli.
-
-Utilizamos imágenes y gif pertenecientes a las películas Ghibli. 
+Deseamos que nuestra página web siga la estética distintiva del Studio Ghibli, por lo que, predominarán los colores pasteles, letras redondeadas, imágenes y videos de las películas, dibujos simples, redondeados y tiernos.
