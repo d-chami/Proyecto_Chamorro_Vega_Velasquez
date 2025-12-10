@@ -1,4 +1,4 @@
-#Análisis diseño 
+# Análisis diseño 
 
 La página se organiza como una narración progresiva: primero presenta el tema y su relevancia, luego incorpora escenas y datos que amplían la perspectiva, y finalmente ofrece conclusiones o reflexiones que cierran el relato informativo. El usuario avanza de arriba hacia abajo, siguiendo una secuencia lógica donde cada sección actúa como un capítulo que amplía el anterior.
 
