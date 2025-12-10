@@ -397,4 +397,10 @@ img[src="YOUR_IMAGE.jpg"] {
   height: auto;
   opacity: 0.85;
 }
+.chart-embed iframe {
+  width: 110%;     /* un poco más grande */
+  max-width: 1100px;
+  height: 650px;   /* aumenta la altura */
+}
+
 
