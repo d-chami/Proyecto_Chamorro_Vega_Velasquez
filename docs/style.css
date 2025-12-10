@@ -330,8 +330,8 @@ h3 {
 }
 
 .cloud-pic {
-  width: 100px;
-  height: 60px;
+  width: 120px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -348,6 +348,7 @@ img[src="YOUR_IMAGE.jpg"] {
   font-size: 14px;
   line-height: 1.4rem;
 }
+
 
 
 
