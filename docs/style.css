@@ -369,3 +369,23 @@ img[src="YOUR_IMAGE.jpg"] {
   border: none;
   overflow: hidden;
 }
+.site-footer {
+
+  position: relative;
+  width: 100%;
+
+  height: 140px;        /* ✅ gives the footer real space */
+  margin-top: 4rem;
+}
+
+/* small image pinned inside footer */
+.footer-image {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+
+  width: 110px;         /* ← size here */
+  height: auto;
+
+  opacity: 0.85;
+}
