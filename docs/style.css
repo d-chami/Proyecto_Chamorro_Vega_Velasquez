@@ -349,4 +349,9 @@ img[src="YOUR_IMAGE.jpg"] {
 .cloud-text {
   font-size: 14px;
   line-height: 1.4rem;
+
+}
+.cry-section {
+  background-color: #E8B4A6; /* soft terracotta */
+  padding: 40px 0;
 }
